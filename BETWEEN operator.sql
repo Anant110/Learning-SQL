@@ -1,0 +1,6 @@
+USE xyz;
+
+SELECT * FROM employee;
+
+-- BETWEEN OPERATOR
+SELECT * FROM employee WHERE salary BETWEEN 100000 AND 500000;

@@ -1,0 +1,11 @@
+USE xyz;
+
+-- LIKE AND WILDCARD OPERATORS
+SELECT * FROM employee;
+
+SELECT * FROM employee WHERE name LIKE 'S%';
+
+-- THIRD CHARACTER MUST BE M
+SELECT * FROM employee WHERE name LIKE '__M%';
+
+

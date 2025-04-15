@@ -1,0 +1,9 @@
+USE xyz;
+
+SELECT * FROM employee;
+
+-- PERFORM FINFIND THE NTH HIGHEST SALARY
+SELECT *
+FROM employee
+ORDER BY salary DESC
+LIMIT 2,1

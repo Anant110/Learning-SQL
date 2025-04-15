@@ -1,0 +1,29 @@
+USE xyz;
+
+SELECT * FROM employee;
+
+-- SUB QUERY
+SELECT MIN(salary) FROM employee;
+
+-- PERFORM NESTED SUBQUERIES
+SELECT name,salary
+FROM employee
+WHERE salary>(SELECT MIN(salary) FROM employee);
+
+-- EMPLOYEE HAVING THE MIN AGE
+SELECT MIN(age) FROM employee;
+
+SELECT *
+FROM employee
+WHERE age=(SELECT MIN(age) FROM employee);
+
+-- EMPLOYEE HAVING GREATER THAN THE THE MIN AGE
+SELECT MIN(age) FROM employee;
+SELECT *
+FROM employee
+WHERE age>(SELECT MIN(age) FROM employee);
+
+-- PRINT NAME OF EMPLOYEES WITH AVG AGE AND AGE OF EMPLOYEES
+SELECT AVG(age) FROM employee;
+
+

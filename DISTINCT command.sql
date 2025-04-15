@@ -1,0 +1,11 @@
+USE xyz;
+
+SELECT * FROM employee;
+
+-- DISTINCT KEYWORD
+-- WHEN WE RETRIVE UNIQUE VALUES
+SELECT  DISTINCT age
+FROM employee;
+
+SELECT DISTINCT age,department
+FROM employee;
